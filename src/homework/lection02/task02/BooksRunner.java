@@ -5,17 +5,17 @@ public class BooksRunner {
     public static void main(String[] args) {
 
         Books booklist = initializeBooks();
-        String separator = "**********************************************************\n";
+        String separator = "********************************************************\n";
 
-        System.out.println("The original book list is:\n");
+        System.out.println("The original book list is:");
         System.out.println(booklist);
         System.out.println(separator);
 
-        System.out.println("The result of search by authors Ильин, Позняк:\n");
+        System.out.println("The result of search by authors Ильин, Позняк:");
         System.out.println(booklist.searchByAuthor("Ильин").searchByAuthor("Позняк"));
         System.out.println(separator);
 
-        System.out.println("The result of search by publisher McGraw-Hill Education:\n");
+        System.out.println("The result of search by publisher McGraw-Hill Education:");
         System.out.println(booklist.searchByPublisher("McGraw-Hill Education"));
         System.out.println(separator);
 

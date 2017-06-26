@@ -50,7 +50,7 @@ public class Books
             for (Book book : books) {
                 joiner.add(book.toString());
             }
-            return "This book package contains the following books: \n" + joiner.toString();
+            return joiner.toString();
         }
         else return "This book package is empty.";
     }
