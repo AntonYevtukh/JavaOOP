@@ -14,6 +14,7 @@ public class Book {
     private double price;
     private String cover;
 
+    //Да, наверное, конструктор с десятком параметров не есть хорошо, но тут, наверное, уместно
     Book() {
         this("Unknown", "Unknown", "Unknown", "Unknown", 1970, 0, 0.0, "No cover");
     }
@@ -57,10 +58,17 @@ public class Book {
         this.title = title;
     }
 
+    /*
+    Для списка авторов задал разные методы манипуляции, возможно, не стоило так делать
+    Также, возможно, их надо было реализовать где-то далее по тексту, после всех сеттеров
+     */
+
+    //возвращает ссылку на список авторов
     public ArrayList<String> getAuthorsList() {
         return authors;
     }
 
+    //Возвращает список авторов в строчном представлении
     public String getAuthorsString() {
         if (!authors.isEmpty()) {
             StringJoiner joiner = new StringJoiner(", ","","");
@@ -72,15 +80,18 @@ public class Book {
             return "No authors";
     }
 
+    //задает список авторов
     public void setAuthors(ArrayList<String> authors) {
         this.authors = authors;
     }
 
+    //задает одного автора, затирая имеющихся
     public void setAuthor(String author) {
         this.authors = new ArrayList<>();
         authors.add(author);
     }
 
+    //добавляет нескольких авторов
     public void addAuthors(String... authors) {
         for (String author : authors)
             this.authors.add(author);
