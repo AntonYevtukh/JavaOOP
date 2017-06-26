@@ -7,39 +7,23 @@ public class Book {
 
     private String isbn; //id
     private String title;
-    private ArrayList<String> authors;
+    private String authors;
     private String publisher;
     private int year;
     private int pages;
     private double price;
     private String cover;
 
-    //Да, наверное, конструктор с десятком параметров не есть хорошо, но тут, наверное, уместно
-    Book() {
-        this("Unknown", "Unknown", "Unknown", "Unknown", 1970, 0, 0.0, "No cover");
-    }
-
-    public Book(String isbn, String title, String author, String publisher, int year, int pages, double price, String cover) {
-        this.isbn = isbn;
-        this.title = title;
-        this.authors = new ArrayList<>();
-        this.authors.add(author);
-        this.publisher = publisher;
-        this.year = year;
-        this.pages = pages;
-        this.price = price;
-        this.cover = cover;
-    }
-
-    public Book(String isbn, String title, ArrayList<String> authors, String publisher, int year, int pages, double price, String cover) {
-        this.isbn = isbn;
-        this.title = title;
-        this.authors = authors;
-        this.publisher = publisher;
-        this.year = year;
-        this.pages = pages;
-        this.price = price;
-        this.cover = cover;
+    Book()
+    {
+        isbn = "Unknown";
+        title = "Unknown";
+        authors = "Unknown";
+        publisher = "Unknown";
+        year = 1970;
+        pages = 1;
+        price = 0.0;
+        cover = "No info";
     }
 
     public String getIsbn() {
@@ -47,7 +31,8 @@ public class Book {
     }
 
     public void setIsbn(String isbn) {
-        this.isbn = isbn;
+        if (isbn.indexOf("978") == 0 && isbn.length() >= 13)
+            this.isbn = isbn;
     }
 
     public String getTitle() {
@@ -58,43 +43,12 @@ public class Book {
         this.title = title;
     }
 
-    /*
-    Для списка авторов задал разные методы манипуляции, возможно, не стоило так делать
-    Также, возможно, их надо было реализовать где-то далее по тексту, после всех сеттеров
-     */
-
-    //возвращает ссылку на список авторов
-    public ArrayList<String> getAuthorsList() {
+    public String getAuthors() {
         return authors;
     }
 
-    //Возвращает список авторов в строчном представлении
-    public String getAuthorsString() {
-        if (!authors.isEmpty()) {
-            StringJoiner joiner = new StringJoiner(", ","","");
-            for (String author : authors)
-                joiner.add(author);
-            return joiner.toString();
-        }
-        else
-            return "No authors";
-    }
-
-    //задает список авторов
-    public void setAuthors(ArrayList<String> authors) {
+    public void setAuthors(String authors) {
         this.authors = authors;
-    }
-
-    //задает одного автора, затирая имеющихся
-    public void setAuthor(String author) {
-        this.authors = new ArrayList<>();
-        authors.add(author);
-    }
-
-    //добавляет нескольких авторов
-    public void addAuthors(String... authors) {
-        for (String author : authors)
-            this.authors.add(author);
     }
 
     public String getPublisher() {
@@ -110,7 +64,8 @@ public class Book {
     }
 
     public void setYear(int year) {
-        this.year = year;
+        if (year >= 0)
+            this.year = year;
     }
 
     public int getPages() {
@@ -118,7 +73,8 @@ public class Book {
     }
 
     public void setPages(int pages) {
-        this.pages = pages;
+        if (pages > 0)
+            this.pages = pages;
     }
 
     public double getPrice() {
@@ -126,7 +82,7 @@ public class Book {
     }
 
     public void setPrice(double price) {
-        this.price = price;
+        this.price = price >= 0 ? price : 0;
     }
 
     public String getCover() {
@@ -141,7 +97,7 @@ public class Book {
         StringBuilder summaryInfo = new StringBuilder("Summary book info:\n");
         summaryInfo.append("ISBN: ").append(isbn).append(";\n");
         summaryInfo.append("Title: ").append(title).append(";\n");
-        summaryInfo.append("Authors: ").append(getAuthorsString()).append("\n");
+        summaryInfo.append("Authors: ").append(authors).append(";\n");
         summaryInfo.append("Publisher: ").append(publisher).append(";\n");
         summaryInfo.append("Year: ").append(year).append(";\n");
         summaryInfo.append("Pages: ").append(pages).append(";\n");

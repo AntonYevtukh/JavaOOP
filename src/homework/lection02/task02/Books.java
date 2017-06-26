@@ -22,7 +22,7 @@ public class Books
     Books searchByAuthor(String author) {
         Books result = new Books();
         for (Book book : books)
-            if (book.getAuthorsList().contains(author))
+            if (book.getAuthors().contains(author))
                 result.add(book);
         return result;
     }
