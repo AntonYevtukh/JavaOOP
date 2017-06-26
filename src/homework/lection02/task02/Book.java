@@ -76,6 +76,11 @@ public class Book {
         this.authors = authors;
     }
 
+    public void setAuthor(String author) {
+        this.authors = new ArrayList<>();
+        authors.add(author);
+    }
+
     public void addAuthors(String... authors) {
         for (String author : authors)
             this.authors.add(author);
@@ -93,7 +98,7 @@ public class Book {
         return year;
     }
 
-    public void setYear(short year) {
+    public void setYear(int year) {
         this.year = year;
     }
 
@@ -101,7 +106,7 @@ public class Book {
         return pages;
     }
 
-    public void setPages(short pages) {
+    public void setPages(int pages) {
         this.pages = pages;
     }
 
