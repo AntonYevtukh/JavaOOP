@@ -9,7 +9,7 @@ public class Rectangles {
         rectangles = new ArrayList<>();
     }
 
-    public void addRectangle(Rectangle rectangle) {
+    public void add(Rectangle rectangle) {
         rectangles.add(rectangle);
     }
 
@@ -23,9 +23,15 @@ public class Rectangles {
 
     public String toString()
     {
-        StringBuilder summaryInfo = new StringBuilder("This rectangle package contains following rectangles:\n");
-        for (Rectangle rectangle : rectangles)
-            summaryInfo.append(rectangle.toString() + "\n");
+        StringBuilder summaryInfo;
+
+        if (!rectangles.isEmpty()) {
+            summaryInfo = new StringBuilder("This rectangle package contains the following rectangles:\n");
+            for (Rectangle rectangle : rectangles)
+                summaryInfo.append(rectangle.toString()).append("\n");
+        }
+        else
+            summaryInfo = new StringBuilder("This rectangle package is empty.");
         return summaryInfo.toString();
     }
 }

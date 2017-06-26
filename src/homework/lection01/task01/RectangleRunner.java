@@ -9,10 +9,10 @@ public class RectangleRunner {
         Rectangle squareOne = new Rectangle(16);
         Rectangle squareTwo = new Rectangle(8);
 
-        rectangles.addRectangle(rectangleOne);
-        rectangles.addRectangle(squareOne);
-        rectangles.addRectangle(rectangleTwo);
-        rectangles.addRectangle(squareTwo);
+        rectangles.add(rectangleOne);
+        rectangles.add(squareOne);
+        rectangles.add(rectangleTwo);
+        rectangles.add(squareTwo);
 
         System.out.println(rectangles);
     }
