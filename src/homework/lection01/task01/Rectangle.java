@@ -6,8 +6,8 @@ public class Rectangle
     private double height;
 
     Rectangle(double width, double height) {
-        this.width = width;
-        this.height = height;
+        this.width = width > 0 ? width : 1.0;
+        this.height = height > 0 ? height : 1.0;
     }
 
     Rectangle(double size) {
