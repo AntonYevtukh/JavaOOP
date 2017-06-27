@@ -29,7 +29,7 @@ public class Matrix {
         int n = a.length - 1;
         int temp;
         for (int p = 0; p < a.length / 2; p++) {
-            for (int i = p; i < n - p; i++) {
+            for (int i = 0; i < n - 2 * p; i++) {
                 temp = a[p][i + p];
                 a[p][i + p] = a[i + p][n - p];
                 a[i + p][n - p] = a[n - p][n - i - p];
