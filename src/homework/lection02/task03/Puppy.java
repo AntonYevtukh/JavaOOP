@@ -1,6 +1,6 @@
 package homework.lection02.task03;
 
-public class Puppy extends Dog{
+public class Puppy extends Dog {
 
     Puppy(String name) {
         super(name);

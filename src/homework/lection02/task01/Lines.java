@@ -25,14 +25,12 @@ public class Lines {
         Line longestLine = null;
         double maxLength = 0;
 
-
         for (Line line : lines) {
             if (line.getLength() > maxLength) {
                 longestLine = line;
                 maxLength = line.getLength();
             }
         }
-
         return longestLine;
     }
 

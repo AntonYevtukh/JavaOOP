@@ -6,8 +6,7 @@ public class Point {
     final private double x;
     final private double y;
 
-    Point()
-    {
+    Point() {
         name = '0';
         this.x = 0.0;
         this.y = 0.0;

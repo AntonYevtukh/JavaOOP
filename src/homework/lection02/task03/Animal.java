@@ -17,7 +17,7 @@ public abstract class Animal {
     }
 
     public void bite() {
-        System.out.println(name + " is biteing");
+        System.out.println(name + " is biting");
     }
 
     public abstract void voice();

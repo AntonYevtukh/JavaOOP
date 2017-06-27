@@ -1,7 +1,6 @@
 package homework.lection01.task01;
 
-public class Rectangle
-{
+public class Rectangle {
     private double width;
     private double height;
 

@@ -5,8 +5,7 @@ public class Line {
     final private Point start;
     final private Point end;
 
-    Line()
-    {
+    Line() {
         this.start = new Point();
         this.end = new Point('1',1.0,1.0);
     }
@@ -35,8 +34,7 @@ public class Line {
         return Math.sqrt((end.getX() - start.getX()) * (end.getX() - start.getX()) + (end.getY() - start.getY()) * (end.getY() - start.getY()));
     }
 
-    public String toString()
-    {
+    public String toString() {
         return "Line's name is " + start.getName() + end.getName() + ", start is " + start.toString() + ", end is " + end.toString() + ", length is " +
                 String.format("%.4f",getLength()) + ".";
     }

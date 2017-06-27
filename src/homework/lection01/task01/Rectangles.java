@@ -21,8 +21,7 @@ public class Rectangles {
         return summaryArea;
     }
 
-    public String toString()
-    {
+    public String toString() {
         StringBuilder summaryInfo;
 
         if (!rectangles.isEmpty()) {
