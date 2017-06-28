@@ -1,6 +1,6 @@
 package homework.lection02.task01;
 
-public class Line {
+final public class Line {
 
     final private Point start;
     final private Point end;

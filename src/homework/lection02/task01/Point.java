@@ -1,6 +1,6 @@
 package homework.lection02.task01;
 
-public class Point {
+final public class Point {
 
     final private char name;
     final private double x;
