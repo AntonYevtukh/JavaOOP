@@ -31,7 +31,7 @@ public class Book {
     }
 
     public void setIsbn(String isbn) {
-        if (isbn.indexOf("978") == 0 && isbn.length() >= 13)
+        if (isbn.substring(0,3).equals("978") && isbn.length() >= 13)
             this.isbn = isbn;
     }
 
