@@ -84,6 +84,7 @@ public class BooksRunner {
         booklist.add(linearAlgebra);
         booklist.add(nineteenEightyFour);
         booklist.add(defaultBook);
+        booklist.add(nineteenEightyFour);
 
         return booklist;
     }

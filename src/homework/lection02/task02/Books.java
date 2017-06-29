@@ -16,7 +16,8 @@ public class Books
     }
 
     public void add(Book book) {
-        books.add(book);
+        if (!books.contains(book))
+            books.add(book);
     }
 
     Books searchByAuthor(String author) {
