@@ -3,13 +3,12 @@ package homework.lection04.task01;
 public class GameRunner {
 
     public static void main(String[] args) {
-        GameTrain train = createTrain();
-        System.out.println(train);
+        Train train = new GameTrain();
+        Train train2 = new GameTrain2();
+        System.out.println("Real train's length: " + train);
         System.out.println("Train's length calculated by algorithm: " + findLength(train));
-    }
-
-    public static GameTrain createTrain() {
-        return new GameTrain();
+        System.out.println("Real train2's length: " + train2);
+        System.out.println("Train's length calculated by algorithm: " + findLength(train2));
     }
 
     /**
@@ -22,6 +21,10 @@ public class GameRunner {
 
      Вообще, т.к. в условиях не сказано, что если ввести количество вагонов неправильно, то прозойдет что-то ужасное (например,
      дверь заблокируется навсегда), можно вообще никуда не ходить и использовать последовательный перебор.
+
+     int expectedLength = 1;
+     while(!train.isLength(expectedLength)) expectedLength++;
+     return expectedLength;
      */
     public static int findLength(Train train) {
 
@@ -44,8 +47,9 @@ public class GameRunner {
                 position--;
             } while (position > 0);
 
-            if (train.isLightOn())
+            if (train.isLightOn()) {
                 return estimatedSize;
+            }
         }
     }
 }
