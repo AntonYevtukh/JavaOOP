@@ -10,11 +10,24 @@ public class Directory extends FsItem{
     public Directory(String name, FsItem... items) {
         super(name);
         for (FsItem item : items) {
-            if ((item instanceof Directory) && ((Directory)item).checkEntry(this))
+            if (item.checkEntry(this)) //костыли нужны, чтобы тут работало без instanceof
                 System.out.println("Can't add directory " + item.getName() + " to directory " + name);
             else
                 content.add(item);
         }
+    }
+
+    protected final boolean checkEntry(Directory target) {
+        if (target == this)
+            return true;
+        for (FsItem item : content)
+            if (item.checkEntry(target)) //и тут
+                return true;
+        return false;
+    }
+
+    protected final List<FsItem> getContent() {
+        return content;
     }
 
     public int getSize() {
@@ -26,21 +39,12 @@ public class Directory extends FsItem{
 
     public Directory add(FsItem... items) {
         for (FsItem item : items) {
-            if ((item instanceof Directory) && ((Directory)item).checkEntry(this))
+            if (item.checkEntry(this)) //и тут
                 System.out.println("Can't add directory " + item.getName() + " to directory " + name);
             else
                 content.add(item);
         }
         return this;
-    }
-
-    private boolean checkEntry(Directory target) {
-        if (target == this)
-            return true;
-        for (FsItem item : content)
-            if ((item instanceof Directory) && ((Directory)item).checkEntry(target))
-                return true;
-        return false;
     }
 
     public String toString(int depth) {

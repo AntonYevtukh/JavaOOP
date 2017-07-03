@@ -1,5 +1,7 @@
 package homework.lection04.task02;
 
+import java.util.List;
+
 public abstract class FsItem {
 
     protected String name;
@@ -16,7 +18,9 @@ public abstract class FsItem {
         this.name = name;
     }
 
-    public abstract int getSize();
+    protected abstract boolean checkEntry(Directory target); //объявлене костыля раз
+    protected abstract List<FsItem> getContent(); //объявление костыля два
 
+    public abstract int getSize();
     public abstract String toString(int depth);
 }
