@@ -6,7 +6,7 @@ public abstract class FsItem {
 
     protected String name;
 
-    public FsItem(String name) {
+    protected FsItem(String name) {
         this.name = name;
     }
 
@@ -14,7 +14,7 @@ public abstract class FsItem {
         return name;
     }
 
-    public void setName() {
+    public void setName(String name) {
         this.name = name;
     }
 
