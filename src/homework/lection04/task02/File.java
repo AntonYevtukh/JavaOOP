@@ -1,7 +1,5 @@
 package homework.lection04.task02;
 
-import java.util.List;
-
 public class File extends FsItem {
 
     private int size;
@@ -14,11 +12,6 @@ public class File extends FsItem {
     //реализация костыля раз
     protected final boolean checkEntry(Directory target) {
         return false;
-    }
-
-    //реализация костыля два
-    protected List<FsItem> getContent() {
-        return null;
     }
 
     public int getSize() {
