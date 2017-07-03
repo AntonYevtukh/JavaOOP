@@ -48,10 +48,12 @@ public class Directory extends FsItem{
         for (int i = 1; i < depth; i++) {
             result.append("|   ");
         }
-        result.append("|---" + name + " (" + getSize() + ")");
+        if (depth > 0)
+            result.append("|---");
+        result.append(name + " (" + getSize() + ")\n");
         for (FsItem item : content)
             result.append(item.toString(depth + 1));
-        for (int i = 1; i < depth; i++)
+        for (int i = 0; i < depth; i++)
             result.append("|   ");
         result.append("\n");
         return result.toString();
