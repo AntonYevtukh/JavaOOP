@@ -3,7 +3,7 @@ package homework.lection04.task01;
 
 public class Carriage {
 
-    boolean lightOn;
+    private boolean lightOn;
 
     public Carriage(boolean lightOn) {
         this.lightOn = lightOn;
