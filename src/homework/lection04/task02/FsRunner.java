@@ -19,7 +19,7 @@ public class FsRunner {
 
         System.out.println("Trying to add directory d2 to itself:");
         d2.add(d2);
-        System.out.println("\nTrying to add directory root to directory d2:");
+        System.out.println("\nTrying to add directory root to directory d1:");
         d1.add(root);
         System.out.println("\nSize of the root directory is " + root.getSize() + ".");
     }
