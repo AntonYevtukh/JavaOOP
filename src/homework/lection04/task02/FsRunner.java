@@ -17,9 +17,9 @@ public class FsRunner {
         System.out.println("Tree of file system directories: \n");
         System.out.println(root);
 
-        System.out.println("Trying to add directory d2 to itself:");
+        System.out.println("Trying to add directory dir2 to itself:");
         d2.add(d2);
-        System.out.println("\nTrying to add directory root to directory d1:");
+        System.out.println("\nTrying to add directory root to directory dir1:");
         d1.add(root);
         System.out.println("\nSize of the root directory is " + root.getSize() + ".");
     }

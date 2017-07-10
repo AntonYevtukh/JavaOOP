@@ -1,4 +1,4 @@
-package additional.lection1.task01;
+package additional.lection01.task01;
 
 public class Cat {
 

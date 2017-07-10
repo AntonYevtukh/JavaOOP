@@ -1,5 +1,8 @@
 package homework.lection04.task02;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class File extends FsItem {
 
     private int size;
@@ -9,9 +12,8 @@ public class File extends FsItem {
         this.size = size;
     }
 
-    //реализация костыля раз
-    protected final boolean checkEntry(Directory target) {
-        return false;
+    public List<FsItem> getContent() {
+        return new ArrayList<>();
     }
 
     public int getSize() {

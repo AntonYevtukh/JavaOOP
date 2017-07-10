@@ -1,4 +1,4 @@
-package additional.lection2.task02;
+package additional.lection02.task02;
 
 public class Phone {
 

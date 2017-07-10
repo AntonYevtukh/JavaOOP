@@ -9,19 +9,14 @@ public class Directory extends FsItem{
 
     public Directory(String name, FsItem... items) {
         super(name);
-        for (FsItem item : items) {
-            if (item.checkEntry(this)) //костыли нужны, чтобы тут работало без instanceof
-                System.out.println("Can't add directory " + item.getName() + " to directory " + name);
-            else
-                content.add(item);
-        }
+        add(items);
     }
 
-    protected final boolean checkEntry(Directory target) {
+    protected final boolean checkEntry(FsItem target) {
         if (target == this)
             return true;
-        for (FsItem item : content)
-            if (item.checkEntry(target)) //и тут
+        for (FsItem item : target.getContent())
+            if (checkEntry(item)) //и тут
                 return true;
         return false;
     }
@@ -39,7 +34,7 @@ public class Directory extends FsItem{
 
     public Directory add(FsItem... items) {
         for (FsItem item : items) {
-            if (item.checkEntry(this)) //и тут
+            if (checkEntry(item)) //и тут
                 System.out.println("Can't add directory " + item.getName() + " to directory " + name);
             else
                 content.add(item);

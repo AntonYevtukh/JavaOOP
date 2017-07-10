@@ -1,4 +1,4 @@
-package additional.lection1.task02;
+package additional.lection01.task02;
 
 public class TriangleRunner
 {

@@ -1,4 +1,4 @@
-package additional.lection2.task01;
+package additional.lection02.task01;
 
 public class Vector3DRunner {
 
