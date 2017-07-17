@@ -23,6 +23,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Name: " + name + ", age" + age + ";";
+        return String.format("Name: %-10s; Age: %d", name, age);
     }
 }
