@@ -1,0 +1,341 @@
+Stack demo:
+-------------------------------------------
+
+ArrayStack demo:
+-------------------------------------------
+Pushing 16 elements to ArrayStack:
+
+ 1 has been pushed to stack;
+ 2 has been pushed to stack;
+ 3 has been pushed to stack;
+ 4 has been pushed to stack;
+ 5 has been pushed to stack;
+ 6 has been pushed to stack;
+ 7 has been pushed to stack;
+ 8 has been pushed to stack;
+ 9 has been pushed to stack;
+10 has been pushed to stack;
+11 has been pushed to stack;
+12 has been pushed to stack;
+13 has been pushed to stack;
+14 has been pushed to stack;
+15 has been pushed to stack;
+16 has been pushed to stack;
+
+Popping 8 elements from ArrayStack:
+
+16 has been popped from stack;
+15 has been popped from stack;
+14 has been popped from stack;
+13 has been popped from stack;
+12 has been popped from stack;
+11 has been popped from stack;
+10 has been popped from stack;
+ 9 has been popped from stack;
+
+Pushing next 4 elements to ArrayStack:
+
+17 has been pushed to stack;
+18 has been pushed to stack;
+19 has been pushed to stack;
+20 has been pushed to stack;
+
+Getting ArrayStack content in order
+from top to bottom using iterator:
+
+20 is returned by iterator;
+19 is returned by iterator;
+18 is returned by iterator;
+17 is returned by iterator;
+ 8 is returned by iterator;
+ 7 is returned by iterator;
+ 6 is returned by iterator;
+ 5 is returned by iterator;
+ 4 is returned by iterator;
+ 3 is returned by iterator;
+ 2 is returned by iterator;
+ 1 is returned by iterator;
+-------------------------------------------
+
+LinkedStack demo:
+-------------------------------------------
+Pushing 16 elements to LinkedStack:
+
+ 1 has been pushed to stack;
+ 2 has been pushed to stack;
+ 3 has been pushed to stack;
+ 4 has been pushed to stack;
+ 5 has been pushed to stack;
+ 6 has been pushed to stack;
+ 7 has been pushed to stack;
+ 8 has been pushed to stack;
+ 9 has been pushed to stack;
+10 has been pushed to stack;
+11 has been pushed to stack;
+12 has been pushed to stack;
+13 has been pushed to stack;
+14 has been pushed to stack;
+15 has been pushed to stack;
+16 has been pushed to stack;
+
+Popping 8 elements from LinkedStack:
+
+16 has been popped from stack;
+15 has been popped from stack;
+14 has been popped from stack;
+13 has been popped from stack;
+12 has been popped from stack;
+11 has been popped from stack;
+10 has been popped from stack;
+ 9 has been popped from stack;
+
+Pushing next 4 elements to LinkedStack:
+
+17 has been pushed to stack;
+18 has been pushed to stack;
+19 has been pushed to stack;
+20 has been pushed to stack;
+
+Getting LinkedStack content in order
+from top to bottom using iterator:
+
+20 is returned by iterator;
+19 is returned by iterator;
+18 is returned by iterator;
+17 is returned by iterator;
+ 8 is returned by iterator;
+ 7 is returned by iterator;
+ 6 is returned by iterator;
+ 5 is returned by iterator;
+ 4 is returned by iterator;
+ 3 is returned by iterator;
+ 2 is returned by iterator;
+ 1 is returned by iterator;
+-------------------------------------------
+
+LinkedListStack demo:
+-------------------------------------------
+Pushing 16 elements to LinkedListStack:
+
+ 1 has been pushed to stack;
+ 2 has been pushed to stack;
+ 3 has been pushed to stack;
+ 4 has been pushed to stack;
+ 5 has been pushed to stack;
+ 6 has been pushed to stack;
+ 7 has been pushed to stack;
+ 8 has been pushed to stack;
+ 9 has been pushed to stack;
+10 has been pushed to stack;
+11 has been pushed to stack;
+12 has been pushed to stack;
+13 has been pushed to stack;
+14 has been pushed to stack;
+15 has been pushed to stack;
+16 has been pushed to stack;
+
+Popping 8 elements from LinkedListStack:
+
+16 has been popped from stack;
+15 has been popped from stack;
+14 has been popped from stack;
+13 has been popped from stack;
+12 has been popped from stack;
+11 has been popped from stack;
+10 has been popped from stack;
+ 9 has been popped from stack;
+
+Pushing next 4 elements to LinkedListStack:
+
+17 has been pushed to stack;
+18 has been pushed to stack;
+19 has been pushed to stack;
+20 has been pushed to stack;
+
+Getting LinkedListStack content in order
+from top to bottom using iterator:
+
+20 is returned by iterator;
+19 is returned by iterator;
+18 is returned by iterator;
+17 is returned by iterator;
+ 8 is returned by iterator;
+ 7 is returned by iterator;
+ 6 is returned by iterator;
+ 5 is returned by iterator;
+ 4 is returned by iterator;
+ 3 is returned by iterator;
+ 2 is returned by iterator;
+ 1 is returned by iterator;
+-------------------------------------------
+
+Queue demo:
+-------------------------------------------
+
+ArrayQueue demo:
+-------------------------------------------
+Offering 16 elements to ArrayQueue:
+
+ 1 has been offered to queue;
+ 2 has been offered to queue;
+ 3 has been offered to queue;
+ 4 has been offered to queue;
+ 5 has been offered to queue;
+ 6 has been offered to queue;
+ 7 has been offered to queue;
+ 8 has been offered to queue;
+ 9 has been offered to queue;
+10 has been offered to queue;
+11 has been offered to queue;
+12 has been offered to queue;
+13 has been offered to queue;
+14 has been offered to queue;
+15 has been offered to queue;
+16 has been offered to queue;
+
+Polling 8 elements from ArrayQueue:
+
+ 1 has been polled from queue;
+ 2 has been polled from queue;
+ 3 has been polled from queue;
+ 4 has been polled from queue;
+ 5 has been polled from queue;
+ 6 has been polled from queue;
+ 7 has been polled from queue;
+ 8 has been polled from queue;
+
+Offering next 4 elements to ArrayQueue:
+
+17 has been offered to queue;
+18 has been offered to queue;
+19 has been offered to queue;
+20 has been offered to queue;
+
+Getting ArrayQueue content in order
+from head to tail using iterator:
+
+ 9 is returned by iterator;
+10 is returned by iterator;
+11 is returned by iterator;
+12 is returned by iterator;
+13 is returned by iterator;
+14 is returned by iterator;
+15 is returned by iterator;
+16 is returned by iterator;
+17 is returned by iterator;
+18 is returned by iterator;
+19 is returned by iterator;
+20 is returned by iterator;
+-------------------------------------------
+
+LinkedQueue demo:
+-------------------------------------------
+Offering 16 elements to LinkedQueue:
+
+ 1 has been offered to queue;
+ 2 has been offered to queue;
+ 3 has been offered to queue;
+ 4 has been offered to queue;
+ 5 has been offered to queue;
+ 6 has been offered to queue;
+ 7 has been offered to queue;
+ 8 has been offered to queue;
+ 9 has been offered to queue;
+10 has been offered to queue;
+11 has been offered to queue;
+12 has been offered to queue;
+13 has been offered to queue;
+14 has been offered to queue;
+15 has been offered to queue;
+16 has been offered to queue;
+
+Polling 8 elements from LinkedQueue:
+
+ 1 has been polled from queue;
+ 2 has been polled from queue;
+ 3 has been polled from queue;
+ 4 has been polled from queue;
+ 5 has been polled from queue;
+ 6 has been polled from queue;
+ 7 has been polled from queue;
+ 8 has been polled from queue;
+
+Offering next 4 elements to LinkedQueue:
+
+17 has been offered to queue;
+18 has been offered to queue;
+19 has been offered to queue;
+20 has been offered to queue;
+
+Getting LinkedQueue content in order
+from head to tail using iterator:
+
+ 9 is returned by iterator;
+10 is returned by iterator;
+11 is returned by iterator;
+12 is returned by iterator;
+13 is returned by iterator;
+14 is returned by iterator;
+15 is returned by iterator;
+16 is returned by iterator;
+17 is returned by iterator;
+18 is returned by iterator;
+19 is returned by iterator;
+20 is returned by iterator;
+-------------------------------------------
+
+LinkedListQueue demo:
+-------------------------------------------
+Offering 16 elements to LinkedListQueue:
+
+ 1 has been offered to queue;
+ 2 has been offered to queue;
+ 3 has been offered to queue;
+ 4 has been offered to queue;
+ 5 has been offered to queue;
+ 6 has been offered to queue;
+ 7 has been offered to queue;
+ 8 has been offered to queue;
+ 9 has been offered to queue;
+10 has been offered to queue;
+11 has been offered to queue;
+12 has been offered to queue;
+13 has been offered to queue;
+14 has been offered to queue;
+15 has been offered to queue;
+16 has been offered to queue;
+
+Polling 8 elements from LinkedListQueue:
+
+ 1 has been polled from queue;
+ 2 has been polled from queue;
+ 3 has been polled from queue;
+ 4 has been polled from queue;
+ 5 has been polled from queue;
+ 6 has been polled from queue;
+ 7 has been polled from queue;
+ 8 has been polled from queue;
+
+Offering next 4 elements to LinkedListQueue:
+
+17 has been offered to queue;
+18 has been offered to queue;
+19 has been offered to queue;
+20 has been offered to queue;
+
+Getting LinkedListQueue content in order
+from head to tail using iterator:
+
+ 9 is returned by iterator;
+10 is returned by iterator;
+11 is returned by iterator;
+12 is returned by iterator;
+13 is returned by iterator;
+14 is returned by iterator;
+15 is returned by iterator;
+16 is returned by iterator;
+17 is returned by iterator;
+18 is returned by iterator;
+19 is returned by iterator;
+20 is returned by iterator;
+-------------------------------------------

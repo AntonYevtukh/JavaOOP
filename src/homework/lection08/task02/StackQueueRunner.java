@@ -126,7 +126,7 @@ public class StackQueueRunner {
         stacks.add(new LinkedStack<>());
         stacks.add(new LinkedListStack<>());
 
-        System.out.println("\nStacks benchmark:\n\n" + SEPARATOR);
+        System.out.println("\nStacks benchmark:\n" + SEPARATOR);
         printSystemInfo();
 
         for (int mod = 0; mod <= 4; mod += 2) {
@@ -179,7 +179,7 @@ public class StackQueueRunner {
         queues.add(new LinkedQueue<>());
         queues.add(new LinkedListQueue<>());
 
-        System.out.println("\nQueues benchmark:\n\n" + SEPARATOR);
+        System.out.println("\nQueues benchmark:\n" + SEPARATOR);
         printSystemInfo();
 
         for (int mod = 0; mod <= 4; mod += 2) {
