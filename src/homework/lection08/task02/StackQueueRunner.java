@@ -110,6 +110,9 @@ public class StackQueueRunner {
             while (queueIterator.hasNext())
                 System.out.printf("%2d is returned by iterator;\n", queueIterator.next());
 
+            System.out.println("\nResult of queue.contains(4) is " + queue.contains(4));
+            System.out.println("Result of queue.contains(16) is " + queue.contains(16));
+
             System.out.println(SEPARATOR);
         }
     }

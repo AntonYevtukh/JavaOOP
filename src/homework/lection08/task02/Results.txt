@@ -226,6 +226,9 @@ from head to tail using iterator:
 18 is returned by iterator;
 19 is returned by iterator;
 20 is returned by iterator;
+
+Result of queue.contains(4) is false
+Result of queue.contains(16) is true
 -------------------------------------------
 
 LinkedQueue demo:
@@ -282,6 +285,9 @@ from head to tail using iterator:
 18 is returned by iterator;
 19 is returned by iterator;
 20 is returned by iterator;
+
+Result of queue.contains(4) is false
+Result of queue.contains(16) is true
 -------------------------------------------
 
 LinkedListQueue demo:
@@ -338,4 +344,7 @@ from head to tail using iterator:
 18 is returned by iterator;
 19 is returned by iterator;
 20 is returned by iterator;
+
+Result of queue.contains(4) is false
+Result of queue.contains(16) is true
 -------------------------------------------
