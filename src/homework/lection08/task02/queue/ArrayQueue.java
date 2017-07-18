@@ -99,8 +99,9 @@ public class ArrayQueue<E> implements Queue<E> {
 
     private void trim() {
         if (size() == elems.length >> 2) {
-            E[] temp = Arrays.copyOfRange(elems, head, tail);
-            elems = Arrays.copyOf(temp, temp.length << 1);
+            E[] temp = (E[])new Object[elems.length << 1];
+            System.arraycopy(elems, head, temp, 0, size());
+            elems = temp;
             tail = tail - head;
             head = 0;
         }
@@ -108,11 +109,11 @@ public class ArrayQueue<E> implements Queue<E> {
 
     private void grow() {
         if (tail == elems.length) {
-            E[] temp = Arrays.copyOfRange(elems, head, tail);
-            if (Integer.MAX_VALUE - size() > Integer.MAX_VALUE >> 1)
-                elems = Arrays.copyOf(temp, elems.length << 1);
-            else
-                elems = Arrays.copyOf(temp, Integer.MAX_VALUE);
+            int newLength = (Integer.MAX_VALUE - size() > Integer.MAX_VALUE >> 1 ?
+                    (size() == 0 ? 8 : size() << 1) : Integer.MAX_VALUE);
+            E[] temp = (E[])new Object[newLength];
+            System.arraycopy(elems, head, temp, 0, size());
+            elems = temp;
             tail = tail - head;
             head = 0;
         }
