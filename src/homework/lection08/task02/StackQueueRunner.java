@@ -28,8 +28,8 @@ public class StackQueueRunner {
 
     public static void main(String[] args) {
 
-        //stackDemo();
-        //queueDemo();
+        stackDemo();
+        queueDemo();
         stackBenchmark();
         queueBenchmark();
     }
@@ -127,6 +127,7 @@ public class StackQueueRunner {
         stacks.add(new LinkedListStack<>());
 
         System.out.println("\nStacks benchmark:\n\n" + SEPARATOR);
+        printSystemInfo();
 
         for (int mod = 0; mod <= 4; mod += 2) {
             int currentCount = COUNT_TO_BENCH << mod;
@@ -179,6 +180,7 @@ public class StackQueueRunner {
         queues.add(new LinkedListQueue<>());
 
         System.out.println("\nQueues benchmark:\n\n" + SEPARATOR);
+        printSystemInfo();
 
         for (int mod = 0; mod <= 4; mod += 2) {
             int currentCount = COUNT_TO_BENCH << mod;
@@ -216,5 +218,23 @@ public class StackQueueRunner {
             }
             System.out.println(SEPARATOR);
         }
+    }
+
+    public static void printSystemInfo() {
+
+        System.out.println("\nSystem info:");
+        System.out.println(SEPARATOR);
+        System.out.printf("%-24s: %s\n", "OS name", System.getProperty("os.name"));
+        System.out.printf("%-24s: %s\n","OS architecture", System.getProperty("os.arch"));
+        System.out.printf("%-24s: %s\n", "OS version", System.getProperty("os.version"));
+        System.out.printf("%-24s: %s\n", "CPU identifier", System.getenv("PROCESSOR_IDENTIFIER"));
+        System.out.printf("%-24s: %s\n", "CPU architecture", System.getenv("PROCESSOR_ARCHITECTURE"));
+        System.out.printf("%-24s: %s\n", "Number of CPU threads", System.getenv("NUMBER_OF_PROCESSORS"));
+        System.out.printf("%-24s: %s\n", "Free memory (MB)", (Runtime.getRuntime().freeMemory() >> 20));
+        System.out.printf("%-24s: %s\n", "Maximum memory (MB)", (Runtime.getRuntime().maxMemory() >> 20));
+        System.out.printf("%-24s: %s\n", "Total memory (MB)", (Runtime.getRuntime().totalMemory() >> 20));
+        System.out.println(SEPARATOR);
+        System.out.println();
+
     }
 }

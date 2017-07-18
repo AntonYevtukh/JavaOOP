@@ -1,0 +1,453 @@
+"C:\Program Files\Java\jdk1.8.0_131\bin\java" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.3\lib\idea_rt.jar=51091:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.3\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;D:\Storage\Work\Java\Projects\#ProgUA\JavaOOP\out\production\JavaOOP" homework.lection08.task02.StackQueueRunner
+
+Stack demo:
+-------------------------------------------
+
+ArrayStack demo:
+-------------------------------------------
+Pushing 16 elements to ArrayStack:
+
+ 1 has been pushed to stack;
+ 2 has been pushed to stack;
+ 3 has been pushed to stack;
+ 4 has been pushed to stack;
+ 5 has been pushed to stack;
+ 6 has been pushed to stack;
+ 7 has been pushed to stack;
+ 8 has been pushed to stack;
+ 9 has been pushed to stack;
+10 has been pushed to stack;
+11 has been pushed to stack;
+12 has been pushed to stack;
+13 has been pushed to stack;
+14 has been pushed to stack;
+15 has been pushed to stack;
+16 has been pushed to stack;
+
+Popping 8 elements from ArrayStack:
+
+16 has been popped from stack;
+15 has been popped from stack;
+14 has been popped from stack;
+13 has been popped from stack;
+12 has been popped from stack;
+11 has been popped from stack;
+10 has been popped from stack;
+ 9 has been popped from stack;
+
+Pushing next 4 elements to ArrayStack:
+
+17 has been pushed to stack;
+18 has been pushed to stack;
+19 has been pushed to stack;
+20 has been pushed to stack;
+
+Getting ArrayStack content in order 
+from top to bottom using iterator:
+
+20 is returned by iterator;
+19 is returned by iterator;
+18 is returned by iterator;
+17 is returned by iterator;
+ 8 is returned by iterator;
+ 7 is returned by iterator;
+ 6 is returned by iterator;
+ 5 is returned by iterator;
+ 4 is returned by iterator;
+ 3 is returned by iterator;
+ 2 is returned by iterator;
+ 1 is returned by iterator;
+-------------------------------------------
+
+LinkedStack demo:
+-------------------------------------------
+Pushing 16 elements to LinkedStack:
+
+ 1 has been pushed to stack;
+ 2 has been pushed to stack;
+ 3 has been pushed to stack;
+ 4 has been pushed to stack;
+ 5 has been pushed to stack;
+ 6 has been pushed to stack;
+ 7 has been pushed to stack;
+ 8 has been pushed to stack;
+ 9 has been pushed to stack;
+10 has been pushed to stack;
+11 has been pushed to stack;
+12 has been pushed to stack;
+13 has been pushed to stack;
+14 has been pushed to stack;
+15 has been pushed to stack;
+16 has been pushed to stack;
+
+Popping 8 elements from LinkedStack:
+
+16 has been popped from stack;
+15 has been popped from stack;
+14 has been popped from stack;
+13 has been popped from stack;
+12 has been popped from stack;
+11 has been popped from stack;
+10 has been popped from stack;
+ 9 has been popped from stack;
+
+Pushing next 4 elements to LinkedStack:
+
+17 has been pushed to stack;
+18 has been pushed to stack;
+19 has been pushed to stack;
+20 has been pushed to stack;
+
+Getting LinkedStack content in order 
+from top to bottom using iterator:
+
+20 is returned by iterator;
+19 is returned by iterator;
+18 is returned by iterator;
+17 is returned by iterator;
+ 8 is returned by iterator;
+ 7 is returned by iterator;
+ 6 is returned by iterator;
+ 5 is returned by iterator;
+ 4 is returned by iterator;
+ 3 is returned by iterator;
+ 2 is returned by iterator;
+ 1 is returned by iterator;
+-------------------------------------------
+
+LinkedListStack demo:
+-------------------------------------------
+Pushing 16 elements to LinkedListStack:
+
+ 1 has been pushed to stack;
+ 2 has been pushed to stack;
+ 3 has been pushed to stack;
+ 4 has been pushed to stack;
+ 5 has been pushed to stack;
+ 6 has been pushed to stack;
+ 7 has been pushed to stack;
+ 8 has been pushed to stack;
+ 9 has been pushed to stack;
+10 has been pushed to stack;
+11 has been pushed to stack;
+12 has been pushed to stack;
+13 has been pushed to stack;
+14 has been pushed to stack;
+15 has been pushed to stack;
+16 has been pushed to stack;
+
+Popping 8 elements from LinkedListStack:
+
+16 has been popped from stack;
+15 has been popped from stack;
+14 has been popped from stack;
+13 has been popped from stack;
+12 has been popped from stack;
+11 has been popped from stack;
+10 has been popped from stack;
+ 9 has been popped from stack;
+
+Pushing next 4 elements to LinkedListStack:
+
+17 has been pushed to stack;
+18 has been pushed to stack;
+19 has been pushed to stack;
+20 has been pushed to stack;
+
+Getting LinkedListStack content in order 
+from top to bottom using iterator:
+
+20 is returned by iterator;
+19 is returned by iterator;
+18 is returned by iterator;
+17 is returned by iterator;
+ 8 is returned by iterator;
+ 7 is returned by iterator;
+ 6 is returned by iterator;
+ 5 is returned by iterator;
+ 4 is returned by iterator;
+ 3 is returned by iterator;
+ 2 is returned by iterator;
+ 1 is returned by iterator;
+-------------------------------------------
+
+Queue demo:
+-------------------------------------------
+
+ArrayQueue demo:
+-------------------------------------------
+Offering 16 elements to ArrayQueue:
+
+ 1 has been offered to queue;
+ 2 has been offered to queue;
+ 3 has been offered to queue;
+ 4 has been offered to queue;
+ 5 has been offered to queue;
+ 6 has been offered to queue;
+ 7 has been offered to queue;
+ 8 has been offered to queue;
+ 9 has been offered to queue;
+10 has been offered to queue;
+11 has been offered to queue;
+12 has been offered to queue;
+13 has been offered to queue;
+14 has been offered to queue;
+15 has been offered to queue;
+16 has been offered to queue;
+
+Polling 8 elements from ArrayQueue:
+
+ 1 has been polled from queue;
+ 2 has been polled from queue;
+ 3 has been polled from queue;
+ 4 has been polled from queue;
+ 5 has been polled from queue;
+ 6 has been polled from queue;
+ 7 has been polled from queue;
+ 8 has been polled from queue;
+
+Offering next 4 elements to ArrayQueue:
+
+17 has been offered to queue;
+18 has been offered to queue;
+19 has been offered to queue;
+20 has been offered to queue;
+
+Getting ArrayQueue content in order 
+from head to tail using iterator:
+
+ 9 is returned by iterator;
+10 is returned by iterator;
+11 is returned by iterator;
+12 is returned by iterator;
+13 is returned by iterator;
+14 is returned by iterator;
+15 is returned by iterator;
+16 is returned by iterator;
+17 is returned by iterator;
+18 is returned by iterator;
+19 is returned by iterator;
+20 is returned by iterator;
+-------------------------------------------
+
+LinkedQueue demo:
+-------------------------------------------
+Offering 16 elements to LinkedQueue:
+
+ 1 has been offered to queue;
+ 2 has been offered to queue;
+ 3 has been offered to queue;
+ 4 has been offered to queue;
+ 5 has been offered to queue;
+ 6 has been offered to queue;
+ 7 has been offered to queue;
+ 8 has been offered to queue;
+ 9 has been offered to queue;
+10 has been offered to queue;
+11 has been offered to queue;
+12 has been offered to queue;
+13 has been offered to queue;
+14 has been offered to queue;
+15 has been offered to queue;
+16 has been offered to queue;
+
+Polling 8 elements from LinkedQueue:
+
+ 1 has been polled from queue;
+ 2 has been polled from queue;
+ 3 has been polled from queue;
+ 4 has been polled from queue;
+ 5 has been polled from queue;
+ 6 has been polled from queue;
+ 7 has been polled from queue;
+ 8 has been polled from queue;
+
+Offering next 4 elements to LinkedQueue:
+
+17 has been offered to queue;
+18 has been offered to queue;
+19 has been offered to queue;
+20 has been offered to queue;
+
+Getting LinkedQueue content in order 
+from head to tail using iterator:
+
+ 9 is returned by iterator;
+10 is returned by iterator;
+11 is returned by iterator;
+12 is returned by iterator;
+13 is returned by iterator;
+14 is returned by iterator;
+15 is returned by iterator;
+16 is returned by iterator;
+17 is returned by iterator;
+18 is returned by iterator;
+19 is returned by iterator;
+20 is returned by iterator;
+-------------------------------------------
+
+LinkedListQueue demo:
+-------------------------------------------
+Offering 16 elements to LinkedListQueue:
+
+ 1 has been offered to queue;
+ 2 has been offered to queue;
+ 3 has been offered to queue;
+ 4 has been offered to queue;
+ 5 has been offered to queue;
+ 6 has been offered to queue;
+ 7 has been offered to queue;
+ 8 has been offered to queue;
+ 9 has been offered to queue;
+10 has been offered to queue;
+11 has been offered to queue;
+12 has been offered to queue;
+13 has been offered to queue;
+14 has been offered to queue;
+15 has been offered to queue;
+16 has been offered to queue;
+
+Polling 8 elements from LinkedListQueue:
+
+ 1 has been polled from queue;
+ 2 has been polled from queue;
+ 3 has been polled from queue;
+ 4 has been polled from queue;
+ 5 has been polled from queue;
+ 6 has been polled from queue;
+ 7 has been polled from queue;
+ 8 has been polled from queue;
+
+Offering next 4 elements to LinkedListQueue:
+
+17 has been offered to queue;
+18 has been offered to queue;
+19 has been offered to queue;
+20 has been offered to queue;
+
+Getting LinkedListQueue content in order 
+from head to tail using iterator:
+
+ 9 is returned by iterator;
+10 is returned by iterator;
+11 is returned by iterator;
+12 is returned by iterator;
+13 is returned by iterator;
+14 is returned by iterator;
+15 is returned by iterator;
+16 is returned by iterator;
+17 is returned by iterator;
+18 is returned by iterator;
+19 is returned by iterator;
+20 is returned by iterator;
+-------------------------------------------
+
+Stacks benchmark:
+
+-------------------------------------------
+
+System info:
+-------------------------------------------
+OS name                 : Windows 10
+OS architecture         : amd64
+OS version              : 10.0
+CPU identifier          : Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+CPU architecture        : AMD64
+Number of CPU threads   : 4
+Free memory (MB)        : 83
+Maximum memory (MB)     : 1241
+Total memory (MB)       : 84
+-------------------------------------------
+
+Pushing 500000 objects to stack:
+-------------------------------------------
+0:34 for ArrayStack
+0:155 for LinkedStack
+1:378 for LinkedListStack
+-------------------------------------------
+Popping 500000 objects from stack:
+-------------------------------------------
+0:79 for ArrayStack
+0:19 for LinkedStack
+0:35 for LinkedListStack
+-------------------------------------------
+Pushing 2000000 objects to stack:
+-------------------------------------------
+0:175 for ArrayStack
+2:183 for LinkedStack
+3:439 for LinkedListStack
+-------------------------------------------
+Popping 2000000 objects from stack:
+-------------------------------------------
+0:15 for ArrayStack
+0:16 for LinkedStack
+0:23 for LinkedListStack
+-------------------------------------------
+Pushing 8000000 objects to stack:
+-------------------------------------------
+3:993 for ArrayStack
+7:682 for LinkedStack
+9:56 for LinkedListStack
+-------------------------------------------
+Popping 8000000 objects from stack:
+-------------------------------------------
+0:75 for ArrayStack
+0:68 for LinkedStack
+0:102 for LinkedListStack
+-------------------------------------------
+
+Queues benchmark:
+
+-------------------------------------------
+
+System info:
+-------------------------------------------
+OS name                 : Windows 10
+OS architecture         : amd64
+OS version              : 10.0
+CPU identifier          : Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+CPU architecture        : AMD64
+Number of CPU threads   : 4
+Free memory (MB)        : 1091
+Maximum memory (MB)     : 1241
+Total memory (MB)       : 1094
+-------------------------------------------
+
+Offering 500000 objects to queue:
+-------------------------------------------
+0:27 for ArrayQueue
+0:38 for LinkedQueue
+0:45 for LinkedListQueue
+-------------------------------------------
+Polling 500000 objects from queue:
+-------------------------------------------
+0:33 for ArrayQueue
+0:28 for LinkedQueue
+0:29 for LinkedListQueue
+-------------------------------------------
+Offering 2000000 objects to queue:
+-------------------------------------------
+0:266 for ArrayQueue
+0:59 for LinkedQueue
+0:111 for LinkedListQueue
+-------------------------------------------
+Polling 2000000 objects from queue:
+-------------------------------------------
+0:17 for ArrayQueue
+0:13 for LinkedQueue
+0:20 for LinkedListQueue
+-------------------------------------------
+Offering 8000000 objects to queue:
+-------------------------------------------
+0:400 for ArrayQueue
+0:847 for LinkedQueue
+1:441 for LinkedListQueue
+-------------------------------------------
+Polling 8000000 objects from queue:
+-------------------------------------------
+0:75 for ArrayQueue
+0:53 for LinkedQueue
+0:88 for LinkedListQueue
+-------------------------------------------
+
+Process finished with exit code 0
