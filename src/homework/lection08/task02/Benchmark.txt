@@ -1,0 +1,81 @@
+Stacks benchmark:
+
+-------------------------------------------
+Pushing 500000 objects to stack:
+-------------------------------------------
+0:35 for ArrayStack
+0:79 for LinkedStack
+1:252 for LinkedListStack
+-------------------------------------------
+Popping 500000 objects from stack:
+-------------------------------------------
+0:10 for ArrayStack
+0:10 for LinkedStack
+0:73 for LinkedListStack
+-------------------------------------------
+Pushing 2000000 objects to stack:
+-------------------------------------------
+0:208 for ArrayStack
+2:256 for LinkedStack
+3:626 for LinkedListStack
+-------------------------------------------
+Popping 2000000 objects from stack:
+-------------------------------------------
+0:16 for ArrayStack
+0:19 for LinkedStack
+0:22 for LinkedListStack
+-------------------------------------------
+Pushing 8000000 objects to stack:
+-------------------------------------------
+3:904 for ArrayStack
+7:328 for LinkedStack
+8:893 for LinkedListStack
+-------------------------------------------
+Popping 8000000 objects from stack:
+-------------------------------------------
+0:81 for ArrayStack
+0:68 for LinkedStack
+0:122 for LinkedListStack
+-------------------------------------------
+
+Queues benchmark:
+
+-------------------------------------------
+Offering 500000 objects to queue:
+-------------------------------------------
+0:24 for ArrayQueue
+0:11 for LinkedQueue
+0:43 for LinkedListQueue
+-------------------------------------------
+Polling 500000 objects from queue:
+-------------------------------------------
+0:33 for ArrayQueue
+0:25 for LinkedQueue
+0:30 for LinkedListQueue
+-------------------------------------------
+Offering 2000000 objects to queue:
+-------------------------------------------
+0:115 for ArrayQueue
+0:31 for LinkedQueue
+0:140 for LinkedListQueue
+-------------------------------------------
+Polling 2000000 objects from queue:
+-------------------------------------------
+0:18 for ArrayQueue
+0:15 for LinkedQueue
+0:23 for LinkedListQueue
+-------------------------------------------
+Offering 8000000 objects to queue:
+-------------------------------------------
+0:406 for ArrayQueue
+0:641 for LinkedQueue
+1:166 for LinkedListQueue
+-------------------------------------------
+Polling 8000000 objects from queue:
+-------------------------------------------
+0:85 for ArrayQueue
+0:52 for LinkedQueue
+0:95 for LinkedListQueue
+-------------------------------------------
+
+Process finished with exit code 0

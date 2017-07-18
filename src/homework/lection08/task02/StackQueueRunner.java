@@ -28,8 +28,8 @@ public class StackQueueRunner {
 
     public static void main(String[] args) {
 
-        stackDemo();
-        queueDemo();
+        //stackDemo();
+        //queueDemo();
         stackBenchmark();
         queueBenchmark();
     }
