@@ -1,5 +1,4 @@
 Stacks benchmark:
-
 -------------------------------------------
 
 System info:
@@ -17,43 +16,42 @@ Total memory (MB)       : 84
 
 Pushing 500000 objects to stack:
 -------------------------------------------
-0:34 for ArrayStack
-0:155 for LinkedStack
-1:378 for LinkedListStack
+0:37 for ArrayStack
+0:130 for LinkedStack
+1:405 for LinkedListStack
 -------------------------------------------
 Popping 500000 objects from stack:
 -------------------------------------------
-0:79 for ArrayStack
-0:19 for LinkedStack
-0:35 for LinkedListStack
+0:45 for ArrayStack
+0:58 for LinkedStack
+0:61 for LinkedListStack
 -------------------------------------------
 Pushing 2000000 objects to stack:
 -------------------------------------------
-0:175 for ArrayStack
-2:183 for LinkedStack
-3:439 for LinkedListStack
+0:147 for ArrayStack
+2:36 for LinkedStack
+3:556 for LinkedListStack
 -------------------------------------------
 Popping 2000000 objects from stack:
 -------------------------------------------
-0:15 for ArrayStack
+0:17 for ArrayStack
 0:16 for LinkedStack
-0:23 for LinkedListStack
+0:21 for LinkedListStack
 -------------------------------------------
 Pushing 8000000 objects to stack:
 -------------------------------------------
-3:993 for ArrayStack
-7:682 for LinkedStack
-9:56 for LinkedListStack
+4:81 for ArrayStack
+7:607 for LinkedStack
+8:968 for LinkedListStack
 -------------------------------------------
 Popping 8000000 objects from stack:
 -------------------------------------------
-0:75 for ArrayStack
-0:68 for LinkedStack
-0:102 for LinkedListStack
+0:82 for ArrayStack
+0:71 for LinkedStack
+0:111 for LinkedListStack
 -------------------------------------------
 
 Queues benchmark:
-
 -------------------------------------------
 
 System info:
@@ -64,28 +62,28 @@ OS version              : 10.0
 CPU identifier          : Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
 CPU architecture        : AMD64
 Number of CPU threads   : 4
-Free memory (MB)        : 1091
+Free memory (MB)        : 1098
 Maximum memory (MB)     : 1241
-Total memory (MB)       : 1094
+Total memory (MB)       : 1102
 -------------------------------------------
 
 Offering 500000 objects to queue:
 -------------------------------------------
-0:27 for ArrayQueue
-0:38 for LinkedQueue
-0:45 for LinkedListQueue
+0:23 for ArrayQueue
+0:34 for LinkedQueue
+0:46 for LinkedListQueue
 -------------------------------------------
 Polling 500000 objects from queue:
 -------------------------------------------
-0:33 for ArrayQueue
-0:28 for LinkedQueue
-0:29 for LinkedListQueue
+0:30 for ArrayQueue
+0:26 for LinkedQueue
+0:33 for LinkedListQueue
 -------------------------------------------
 Offering 2000000 objects to queue:
 -------------------------------------------
-0:266 for ArrayQueue
-0:59 for LinkedQueue
-0:111 for LinkedListQueue
+0:247 for ArrayQueue
+0:58 for LinkedQueue
+0:112 for LinkedListQueue
 -------------------------------------------
 Polling 2000000 objects from queue:
 -------------------------------------------
@@ -95,15 +93,13 @@ Polling 2000000 objects from queue:
 -------------------------------------------
 Offering 8000000 objects to queue:
 -------------------------------------------
-0:400 for ArrayQueue
-0:847 for LinkedQueue
-1:441 for LinkedListQueue
+0:424 for ArrayQueue
+0:891 for LinkedQueue
+1:399 for LinkedListQueue
 -------------------------------------------
 Polling 8000000 objects from queue:
 -------------------------------------------
-0:75 for ArrayQueue
-0:53 for LinkedQueue
-0:88 for LinkedListQueue
+0:85 for ArrayQueue
+0:55 for LinkedQueue
+0:101 for LinkedListQueue
 -------------------------------------------
-
-Process finished with exit code 0
