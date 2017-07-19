@@ -69,10 +69,8 @@ public class ArrayStack<E> implements Stack<E> {
 
     private void grow() {
         if (size == elems.length) {
-            if (Integer.MAX_VALUE - size > Integer.MAX_VALUE >> 1)
-                elems = Arrays.copyOf(elems, elems.length << 1);
-            else
-                elems = Arrays.copyOf(elems, Integer.MAX_VALUE);
+            int newLength = Integer.MAX_VALUE - size > Integer.MAX_VALUE >> 1 ? elems.length << 1 : Integer.MAX_VALUE;
+            elems = Arrays.copyOf(elems, newLength);
         }
     }
 
