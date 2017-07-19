@@ -234,11 +234,11 @@ public class StackQueueRunner {
         for (int i = 0; i < COUNT_TO_BENCH << 6; i++) {
             objectList.add(new Object());
             if (i % (COUNT_TO_BENCH << 2) == 0) {
-                System.out.printf("%.0f%s done...\n", 6.25 * j, "%");
+                System.out.printf("\r%.0f%s done...", 6.25 * j, "%");
                 j++;
             }
         }
-        System.out.println("Done.");
+        System.out.println("\nDone.");
         System.out.println(SEPARATOR);
     }
 
