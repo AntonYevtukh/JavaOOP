@@ -30,6 +30,7 @@ public class StackQueueRunner {
 
         stackDemo();
         queueDemo();
+        speedUp();
         stackBenchmark();
         queueBenchmark();
     }
@@ -223,7 +224,25 @@ public class StackQueueRunner {
         }
     }
 
-    public static void printSystemInfo() {
+    private static void speedUp() {
+
+        System.out.println("\nPreparing for benchmark:");
+        System.out.println(SEPARATOR);
+        System.out.println("Speeding Up...");
+        ArrayList<Object> objectList = new ArrayList<>();
+        int j = 1;
+        for (int i = 0; i < COUNT_TO_BENCH << 6; i++) {
+            objectList.add(new Object());
+            if (i % (COUNT_TO_BENCH << 2) == 0) {
+                System.out.printf("%.0f%s done...\n", 6.25 * j, "%");
+                j++;
+            }
+        }
+        System.out.println("Done.");
+        System.out.println(SEPARATOR);
+    }
+
+    private static void printSystemInfo() {
 
         System.out.println("\nSystem info:");
         System.out.println(SEPARATOR);
