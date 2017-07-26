@@ -23,7 +23,7 @@ public class LinkedQueue<E> implements Queue<E> {
         if (size != Integer.MAX_VALUE) {
             Node<E> temp = tail;
             tail = new Node(e,null);
-            if (temp == null)
+            if (head == null)
                 head = tail;
             else
                 temp.nextNode = tail;
