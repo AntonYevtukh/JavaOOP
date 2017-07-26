@@ -34,7 +34,7 @@ public class ArrayStack<E> implements Stack<E> {
     }
 
     public E pop() {
-        if (size != 0) {
+        if (!isEmpty()) {
             trim();
             return elems[--size];
         }
@@ -43,7 +43,7 @@ public class ArrayStack<E> implements Stack<E> {
     }
 
     public E peek() {
-        if (size != 0) {
+        if (!isEmpty()) {
             return elems[size - 1];
         }
         else

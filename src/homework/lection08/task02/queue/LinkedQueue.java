@@ -35,7 +35,7 @@ public class LinkedQueue<E> implements Queue<E> {
 
     @Override
     public E remove() {
-        if (head != null) {
+        if (!isEmpty()) {
             E elem = head.value;
             head = head.nextNode;
             size--;
@@ -47,7 +47,7 @@ public class LinkedQueue<E> implements Queue<E> {
 
     @Override
     public E poll() {
-        if (head != null) {
+        if (!isEmpty()) {
             E elem = head.value;
             head = head.nextNode;
             size--;
@@ -59,7 +59,7 @@ public class LinkedQueue<E> implements Queue<E> {
 
     @Override
     public E element() {
-        if (head != null)
+        if (!isEmpty())
             return head.value;
         else
             throw new NoSuchElementException("Queue is empty.");
@@ -67,7 +67,7 @@ public class LinkedQueue<E> implements Queue<E> {
 
     @Override
     public E peek() {
-        if (head != null)
+        if (!isEmpty())
             return head.value;
         else
             return null;

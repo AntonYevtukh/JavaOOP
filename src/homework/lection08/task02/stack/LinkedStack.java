@@ -24,7 +24,7 @@ public class LinkedStack<E> implements Stack<E> {
     }
 
     public E pop() {
-        if (size != 0) {
+        if (!isEmpty()) {
             E elem = top.value;
             top = top.prevNode;
             size--;
@@ -35,7 +35,7 @@ public class LinkedStack<E> implements Stack<E> {
     }
 
     public E peek() {
-        if (size != 0)
+        if (!isEmpty())
             return top.value;
         else
             throw new NoSuchElementException("Stack is empty.");

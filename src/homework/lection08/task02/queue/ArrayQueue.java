@@ -40,7 +40,7 @@ public class ArrayQueue<E> implements Queue<E> {
 
     @Override
     public E remove() {
-        if (head != tail) {
+        if (!isEmpty()) {
             trim();
             return elems[head++];
         }
@@ -50,7 +50,7 @@ public class ArrayQueue<E> implements Queue<E> {
 
     @Override
     public E poll() {
-        if (head != tail) {
+        if (!isEmpty()) {
             trim();
             return elems[head++];
         }
@@ -60,7 +60,7 @@ public class ArrayQueue<E> implements Queue<E> {
 
     @Override
     public E element() {
-        if (head != tail)
+        if (!isEmpty())
             return elems[head];
         else
             throw new NoSuchElementException("Queue is empty.");
@@ -68,7 +68,7 @@ public class ArrayQueue<E> implements Queue<E> {
 
     @Override
     public E peek() {
-        if (head != tail)
+        if (!isEmpty())
             return elems[head];
         else
             return null;
@@ -81,7 +81,7 @@ public class ArrayQueue<E> implements Queue<E> {
 
     @Override
     public boolean isEmpty() {
-        return tail - head == 0;
+        return tail == head;
     }
 
     @Override
