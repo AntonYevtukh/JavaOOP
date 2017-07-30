@@ -13,8 +13,9 @@ public class NumberCounterRunner {
         System.out.println("List of numbers:");
         System.out.println(integers);
 
-        //TreeMap чтобы гарантированно выводить по возрастанию - так читабельней
-        Map<Integer, Integer> integerToCountMap = new TreeMap<>(Comparator.naturalOrder());
+        //Чтобы вывод был упорядоченным
+        //Преобразование хэша в позицию вставки не сохраняет порядок
+        Map<Integer, Integer> integerToCountMap = new TreeMap<>();
 
         for (int i : integers)
             if (integerToCountMap.containsKey(i))
