@@ -8,7 +8,7 @@ import java.util.StringJoiner;
 /**
  * Created by Anton on 31.07.2017.
  */
-public class IOFilms extends Films implements Serializable {
+public class IOFilms extends Films {
 
     private static final String FIELDS_DELIMITER = ";";
     private static final String VALUES_DELIMITER = ",";

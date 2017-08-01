@@ -27,16 +27,17 @@ public class Films {
         return this;
     }
 
+    public List<Film> getFilms() {
+        return films;
+    }
+
     public Films clearFilms() {
         films = new ArrayList<>();
         return this;
     }
 
-    public List<Film> getFilms() {
-        return films;
-    }
-
     public Films foundByGenres(Genre... genres) {
+
         Set<Genre> requestedGenresSet = new TreeSet<Genre>(Arrays.asList(genres));
         Films foundFilms = new Films();
         for (Film film : films)
