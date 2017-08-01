@@ -6,7 +6,7 @@ import java.util.Comparator;
 /**
  * Created by Anton on 30.07.2017.
  */
-public class Actor implements Serializable {
+public class Actor implements Comparable<Actor>, Serializable {
 
     private String name;
     private String surname;
@@ -41,18 +41,11 @@ public class Actor implements Serializable {
         }
     }
 
-    public static ActorComparator getComparator() {
-        return new ActorComparator();
+    public int compareTo(Actor anotherActor) {
+        return toString().compareTo(anotherActor.toString());
     }
 
     public String toString() {
         return name + " " + surname;
-    }
-
-    private static class ActorComparator implements Comparator<Actor>, Serializable {
-
-        public int compare(Actor actor1, Actor actor2) {
-            return actor1.toString().compareTo(actor2.toString());
-        }
     }
 }

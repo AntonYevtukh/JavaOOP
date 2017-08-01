@@ -10,7 +10,7 @@ public class Film implements Serializable {
 
     private String title;
     private int year;
-    private Set<Actor> actors = new TreeSet<>(Actor.getComparator());
+    private Set<Actor> actors = new TreeSet<>();
     private Set<Genre> genres = new TreeSet<>(Genre.getComparator());
 
     public Film(String title, int year) {

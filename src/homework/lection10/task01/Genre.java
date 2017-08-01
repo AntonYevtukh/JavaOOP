@@ -6,7 +6,7 @@ import java.util.Comparator;
 /**
  * Created by Anton on 30.07.2017.
  */
-public enum Genre implements Serializable {
+public enum Genre implements Comparable<Genre>, Serializable {
 
     ACTION, WAR, FAMILY, DETECTIVE, THRILLER, HORROR, HISTORICAL, ADVENTURE,
     COMEDY, DRAM, CATASTROPHE, SCIENCE_FICTION, FANTASY, SPORT;
