@@ -1,9 +1,12 @@
 package homework.lection10.task01;
 
+import java.io.Serializable;
+import java.util.Comparator;
+
 /**
  * Created by Anton on 30.07.2017.
  */
-public class Actor {
+public class Actor implements Serializable {
 
     private String name;
     private String surname;
@@ -38,7 +41,18 @@ public class Actor {
         }
     }
 
+    public static ActorComparator getComparator() {
+        return new ActorComparator();
+    }
+
     public String toString() {
         return name + " " + surname;
+    }
+
+    private static class ActorComparator implements Comparator<Actor>, Serializable {
+
+        public int compare(Actor actor1, Actor actor2) {
+            return actor1.toString().compareTo(actor2.toString());
+        }
     }
 }

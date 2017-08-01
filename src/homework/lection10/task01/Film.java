@@ -1,18 +1,17 @@
 package homework.lection10.task01;
 
-import java.util.Comparator;
-import java.util.Set;
-import java.util.TreeSet;
+import java.io.Serializable;
+import java.util.*;
 
 /**
  * Created by Anton on 30.07.2017.
  */
-public class Film {
+public class Film implements Serializable {
 
     private String title;
     private int year;
-    private Set<Actor> actors = new TreeSet<>(Comparator.comparing((Actor actor) -> actor.toString()));
-    private Set<Genre> genres = new TreeSet<>();
+    private Set<Actor> actors = new TreeSet<>(Actor.getComparator());
+    private Set<Genre> genres = new TreeSet<>(Genre.getComparator());
 
     public Film(String title, int year) {
         this.title = title;
@@ -51,15 +50,23 @@ public class Film {
 
     public String toString() {
         StringBuilder result = new StringBuilder("Title: ");
+        StringJoiner valuesJoiner;
         result.append(title);
         result.append(";\nYear: ");
         result.append(year);
+
         result.append(";\nActors: ");
+        valuesJoiner = new StringJoiner(", ");
         for(Actor actor : actors)
-            result.append(actor + "; ");
+            valuesJoiner.add(actor.toString());
+        result.append(valuesJoiner.toString());
+
+        result.append(";\nGenres: ");
+        valuesJoiner = new StringJoiner(", ");
         for(Genre genre : genres)
-            result.append(genre + "; ");
-        result.append("\n");
+            valuesJoiner.add(genre.name());
+        result.append(valuesJoiner.toString());
+        result.append(";\n");
         return result.toString();
     }
 }
