@@ -29,16 +29,17 @@ public class Actor implements Comparable<Actor>, Serializable {
     }
 
     public boolean equals(Object o) {
+        if (this == o)
+            return true;
         if (this.getClass() != o.getClass())
             return false;
-        else {
-            Actor anotherActor = (Actor)o;
-            if (anotherActor.hashCode() != this.hashCode())
-                return false;
-            if (anotherActor.name != this.name || anotherActor.surname != this.surname)
-                return false;
-            return true;
-        }
+
+        Actor anotherActor = (Actor)o;
+        if (anotherActor.hashCode() != this.hashCode())
+            return false;
+        if (anotherActor.name != this.name || anotherActor.surname != this.surname)
+            return false;
+        return true;
     }
 
     public int compareTo(Actor anotherActor) {
