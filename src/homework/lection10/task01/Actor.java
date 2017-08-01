@@ -31,7 +31,7 @@ public class Actor implements Comparable<Actor>, Serializable {
     public boolean equals(Object o) {
         if (this == o)
             return true;
-        if (this.getClass() != o.getClass())
+        if (this.getClass() != o.getClass() || o == null)
             return false;
 
         Actor anotherActor = (Actor)o;
