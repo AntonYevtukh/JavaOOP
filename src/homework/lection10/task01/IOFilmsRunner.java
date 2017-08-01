@@ -31,20 +31,20 @@ public class IOFilmsRunner {
         try {
             System.out.println("Films, created by runner:");
             System.out.println(ioFilms);
-            ioFilms.writeFilmsIntoFile("Films.csv");
+            ioFilms.writeFilmsIntoFile("src\\homework\\lection10\\task01\\files\\Films.csv");
             ioFilms.clearFilms();
             System.out.println("Films after clearing:");
             System.out.println(ioFilms);
             System.out.println("Films after reading from csv file:");
-            ioFilms.readFilmsFromFile("Films.csv");
+            ioFilms.readFilmsFromFile("src\\homework\\lection10\\task01\\files\\Films.csv");
             System.out.println(ioFilms);
 
-            ioFilms.writeFilmsIntoBinFile("Films.dat");
+            ioFilms.writeFilmsIntoBinFile("src\\homework\\lection10\\task01\\files\\Films.dat");
             ioFilms.clearFilms();
             System.out.println("Films after clearing:");
             System.out.println(ioFilms);
             System.out.println("Films after reading from binary file:");
-            ioFilms.readFilmsFromBinFile("Films.dat");
+            ioFilms.readFilmsFromBinFile("src\\homework\\lection10\\task01\\files\\Films.dat");
             System.out.println(ioFilms);
         } catch (Exception exc) {
             exc.printStackTrace(System.out);
