@@ -38,12 +38,11 @@ public class Films {
 
     public Films foundByGenres(Genre... genres) {
 
-        Set<Genre> requestedGenresSet = new TreeSet<Genre>(Arrays.asList(genres));
+        Set<Genre> requestedGenresSet = new TreeSet<>(Arrays.asList(genres));
         Films foundFilms = new Films();
         for (Film film : films)
-            for (Genre genre : film.getGenres())
-                if (requestedGenresSet.contains(genre))
-                    foundFilms.films.add(film);
+            if (!Collections.disjoint(film.getGenres(), requestedGenresSet))
+                foundFilms.films.add(film);
         return foundFilms;
     }
 
@@ -51,9 +50,8 @@ public class Films {
         Set<Actor> requestedActorsSet = new TreeSet<Actor>(Arrays.asList(actors));
         Films foundFilms = new Films();
         for (Film film : films)
-            for (Actor actor : film.getActors())
-                if (requestedActorsSet.contains(actor))
-                    foundFilms.films.add(film);
+            if (!Collections.disjoint(film.getActors(), requestedActorsSet))
+                foundFilms.films.add(film);
         return foundFilms;
     }
 
