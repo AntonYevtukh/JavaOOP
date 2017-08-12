@@ -21,14 +21,15 @@ public class FactorialRunner {
 
     public static void main(String[] args) {
 
-        new File(DIRECTORY).mkdirs();
+        File saveDirectory = new File(DIRECTORY);
+        saveDirectory.delete();
+        saveDirectory.mkdirs();
         new File(LOGFILE).delete();
         
         printSystemInfo();
-        
-        for (Executor executor : Executors.values()) {
+
+        for (Executor executor : OptimizedExecutors.values())
             benchmark(executor, K, N);
-        }
     }
 
     private static void benchmark(Executor executor, int k, int n) {

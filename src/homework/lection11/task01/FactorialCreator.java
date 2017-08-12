@@ -1,8 +1,5 @@
 package homework.lection11.task01;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.math.BigInteger;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -13,10 +10,10 @@ public class FactorialCreator implements Runnable {
 
     private AtomicInteger counter = new AtomicInteger(0);
     private int multiplier;
-    private String savePath;
+    private FactorialSaver factorialSaver;
 
     public FactorialCreator(int multiplier, String savePath) {
-        this.savePath = savePath;
+        this.factorialSaver = new FactorialSaver(savePath);
         this.multiplier = multiplier;
     }
 
@@ -33,22 +30,13 @@ public class FactorialCreator implements Runnable {
         return result;
     }
 
-    private void saveToFile(BigInteger factorial, String fileName) {
-
-        String[] lines = factorial.toString().split("(?<=\\G..................................................)");
-        new File(fileName).getParentFile().mkdirs();
-        try (PrintWriter printWriter = new PrintWriter(fileName)) {
-            for (String string : lines)
-                printWriter.println(string);
-        } catch (FileNotFoundException exc) {
-            exc.printStackTrace();
-        }
-    }
-
     public void run() {
-        int n = counter.incrementAndGet() * multiplier;
-        BigInteger factorial = getFactorialOf(n);
-        String fileName = savePath + "\\factorial_" + n + ".txt";
-        saveToFile(factorial, fileName);
+        int i;
+        synchronized (this) {
+            i = counter.incrementAndGet();
+        }
+        BigInteger factorial = getFactorialOf(i * multiplier);
+
+        factorialSaver.saveFactorial(factorial, i * multiplier);
     }
 }

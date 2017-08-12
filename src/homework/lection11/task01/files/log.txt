@@ -13,34 +13,26 @@ Total memory (MB)       : 84
 --------------------------------------------------------------------------
 
 Calculating factorials with parameters:
-Executor type: ONE_THREAD_EXECUTOR
+Executor type: OPTIMIZED_PARALLEL_EXECUTOR
 Number of factorials: (N): 100
 Multiplier (K): 1000
-Start time: 09:07:40
-End time: 09:09:44
-Duration: 0:02:03
+Start time: 01:26:29
+End time: 01:26:38
+Duration: 0:00:09
 --------------------------------------------------------------------------
 Calculating factorials with parameters:
-Executor type: CONSISTENT_EXECUTOR
+Executor type: OPTIMIZED_CONSISTENT_EXECUTOR
 Number of factorials: (N): 100
 Multiplier (K): 1000
-Start time: 09:09:44
-End time: 09:11:47
-Duration: 0:02:03
+Start time: 01:26:39
+End time: 01:26:57
+Duration: 0:00:18
 --------------------------------------------------------------------------
 Calculating factorials with parameters:
-Executor type: PARALLEL_EXECUTOR
+Executor type: OPTIMIZED_JOIN_PARALLEL_EXECUTOR
 Number of factorials: (N): 100
 Multiplier (K): 1000
-Start time: 09:11:47
-End time: 09:13:00
-Duration: 0:01:12
---------------------------------------------------------------------------
-Calculating factorials with parameters:
-Executor type: EXECUTOR_SERVICE_EXECUTOR
-Number of factorials: (N): 100
-Multiplier (K): 1000
-Start time: 09:13:00
-End time: 09:14:13
-Duration: 0:01:13
+Start time: 01:26:57
+End time: 01:27:12
+Duration: 0:00:14
 --------------------------------------------------------------------------
